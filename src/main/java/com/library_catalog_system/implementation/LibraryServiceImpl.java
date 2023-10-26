@@ -32,7 +32,6 @@ public class LibraryServiceImpl implements LibraryService {
      * @return service returns instance of LibraryController
      */
     public static LibraryServiceImpl getInstance() {
-
         if (service == null) {
             service = new LibraryServiceImpl();
         }
@@ -73,17 +72,14 @@ public class LibraryServiceImpl implements LibraryService {
      */
     @Override
     public int lendBook(final Book book) {
-
         if (books.contains(book) && book.getCount() > 0) {
             book.setCount(book.getCount() - 1);
 
             return book.getCount();
         } else {
-
             return 0;
         }
     }
-
 
     /**
      * {@inheritDoc}
@@ -110,11 +106,10 @@ public class LibraryServiceImpl implements LibraryService {
      * @return the collection of book of a specific author
      */
     @Override
-    public Collection<String> searchBookByAuthor(String name) {
+    public Collection<String> searchBookByAuthor(final String name) {
         final Collection<String> booksOfAuthor = new ArrayList<>();
 
-        for (Book book : books) {
-
+        for (final Book book : books) {
             if (book.getAuthor().getName().equals(name)) {
                 booksOfAuthor.add(book.getTitle());
             }
@@ -130,10 +125,10 @@ public class LibraryServiceImpl implements LibraryService {
      * @return the collection of book of a specific title
      */
     @Override
-    public Collection<String> searchBookByTitle(String title) {
+    public Collection<String> searchBookByTitle(final String title) {
         final Collection<String> booksOfTitle = new ArrayList<>();
 
-        for (Book book : books) {
+        for (final Book book : books) {
             final String bookTitle = book.getTitle();
 
             if (bookTitle.equals(title)) {

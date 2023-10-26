@@ -15,7 +15,7 @@ public class Book {
     private static int ISBN=0;
     private int count;
 
-    public void setTitle(String title){
+    public void setTitle(final String title){
         this.title=title;
     }
 
@@ -23,7 +23,7 @@ public class Book {
         return title;
     }
 
-    public void setAuthor(Author author){
+    public void setAuthor(final Author author){
         this.author=author;
     }
 
@@ -39,7 +39,7 @@ public class Book {
         return ISBN;
     }
 
-    public void setCount(int count){
+    public void setCount(final int count){
         this.count=count;
     }
 

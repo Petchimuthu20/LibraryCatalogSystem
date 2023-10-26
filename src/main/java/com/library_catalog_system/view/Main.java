@@ -24,7 +24,7 @@ public class Main {
      *
      * @return instance of an Author
      */
-    private Author createAuthor(String authorName, String phoneNo) {
+    private Author createAuthor(final String authorName, final String phoneNo) {
         final Author author = new Author();
 
         author.setName(authorName);
@@ -57,8 +57,8 @@ public class Main {
      * <p>
      * Attempts to send the instance of the book to the controller
      * </p>
-     * <p>
-     * returns value from the controller
+     *
+     * @return value from the controller
      *
      * @param book Instance of a book to be removed
      */

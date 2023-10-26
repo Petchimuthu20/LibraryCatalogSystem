@@ -30,7 +30,6 @@ public class LibraryController {
      * @return controller returns instance of LibraryController
      */
     public static LibraryController getInstance() {
-
         if (controller == null) {
             controller = new LibraryController();
         }

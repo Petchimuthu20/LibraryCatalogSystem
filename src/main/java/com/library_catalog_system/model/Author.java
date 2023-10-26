@@ -11,7 +11,7 @@ public class Author {
     private String name;
     private String phoneNumber;
 
-    public void setName(String name){
+    public void setName(final String name){
         this.name=name;
     }
 
@@ -19,7 +19,7 @@ public class Author {
         return name;
     }
 
-    public void setPhoneNumber(String phoneNumber){
+    public void setPhoneNumber(final String phoneNumber){
         this.phoneNumber=phoneNumber;
     }
 
