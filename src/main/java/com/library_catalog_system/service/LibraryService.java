@@ -10,8 +10,8 @@ import java.util.Collection;
  * It handles operations like adding, removing and searching for books
  * </p>
  *
- * @version 1.0
  * @author Petchimuthu Pitchiah
+ * @version 1.0
  */
 public interface LibraryService {
 
@@ -19,9 +19,9 @@ public interface LibraryService {
      * <p>
      * Adds book to the library
      * </p>
-     * @param book represents the book to be added
      *
-     * @return  either true if added or false if not
+     * @param book represents the book to be added
+     * @return either true if added or false if not
      */
     boolean addBook(final Book book);
 
@@ -29,8 +29,8 @@ public interface LibraryService {
      * <p>
      * Removes book from the library
      * </p>
-     * @param book represents the {@link Book} to be removed from the library
      *
+     * @param book represents the {@link Book} to be removed from the library
      * @return either true if removed or false if not
      */
     boolean removeBook(final Book book);
@@ -39,16 +39,16 @@ public interface LibraryService {
      * <p>
      * Lends book from the library
      * </p>
-     * @param book represents the book to be lent from the library
      *
+     * @param book represents the book to be lent from the library
      * @return remaining count of the specific book or 0 if there is no stock
      */
     int lendBook(final Book book);
 
     /**
      * Returns book to the book
-     * @param book represents the book to be returned to the library
      *
+     * @param book represents the book to be returned to the library
      * @return count of the specific book after adding the returned book to the library
      */
     int returnBook(final Book book);

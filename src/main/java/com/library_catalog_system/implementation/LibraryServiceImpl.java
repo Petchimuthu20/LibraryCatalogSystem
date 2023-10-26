@@ -12,8 +12,8 @@ import java.util.Collection;
  * It handles operations like adding, removing and searching for books
  * </p>
  *
- * @version 1.0
  * @author Petchimuthu Pitchiah
+ * @version 1.0
  */
 public class LibraryServiceImpl implements LibraryService {
 
@@ -43,8 +43,8 @@ public class LibraryServiceImpl implements LibraryService {
 
     /**
      * {@inheritDoc}
-     * @param book represents the book to be added
      *
+     * @param book represents the book to be added
      * @return either true if added or false if not
      */
     @Override
@@ -55,8 +55,8 @@ public class LibraryServiceImpl implements LibraryService {
 
     /**
      * {@inheritDoc}
-     * @param book represents the book to be removed from the library
      *
+     * @param book represents the book to be removed from the library
      * @return either true if removed or false if not
      */
     @Override
@@ -67,8 +67,8 @@ public class LibraryServiceImpl implements LibraryService {
 
     /**
      * {@inheritDoc}
-     * @param book represents the book to be lent from the library
      *
+     * @param book represents the book to be lent from the library
      * @return remaining count of the specific book or 0 if there is no stock
      */
     @Override
@@ -87,9 +87,9 @@ public class LibraryServiceImpl implements LibraryService {
 
     /**
      * {@inheritDoc}
-     * @param book represents the book to be returned to the library
      *
-     * @return  count of the specific book after adding the returned book to the library
+     * @param book represents the book to be returned to the library
+     * @return count of the specific book after adding the returned book to the library
      */
     @Override
     public int returnBook(final Book book) {
@@ -105,8 +105,8 @@ public class LibraryServiceImpl implements LibraryService {
 
     /**
      * {@inheritDoc}
-     * @param name represents the name of the author
      *
+     * @param name represents the name of the author
      * @return the collection of book of a specific author
      */
     @Override
@@ -125,8 +125,8 @@ public class LibraryServiceImpl implements LibraryService {
 
     /**
      * {@inheritDoc}
-     * @param title represents the title of the book
      *
+     * @param title represents the title of the book
      * @return the collection of book of a specific title
      */
     @Override
